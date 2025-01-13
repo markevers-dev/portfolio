@@ -31,7 +31,7 @@ const RootLayout = async ({ children }) => {
       <body
         className={clsx(
           inter.className,
-          "z-[1] flex h-full min-h-screen w-full flex-col bg-primary-300 text-slate-800 antialiased dark:bg-primary-900 dark:text-slate-100",
+          "z-[1] flex h-full min-h-screen w-full flex-col bg-gradient-to-r from-black to-[#3533cd] text-slate-800 antialiased dark:text-slate-100",
         )}
       >
         {children}

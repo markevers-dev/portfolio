@@ -3,6 +3,7 @@ import { themeCookieSettings } from "config/themeCookieSettings";
 
 export const themeMiddleware = (request) => {
   const theme = request.cookies.get("theme")?.value;
+  const currentUrl = request.nextUrl.href;
 
   const response = NextResponse.next();
   if (!theme) {

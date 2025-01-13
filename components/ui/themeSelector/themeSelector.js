@@ -35,7 +35,7 @@ export const ThemeSelector = ({}) => {
           <Icon
             name={theme === "dark" ? "Moon" : "Sun"}
             size={iconSize}
-            className="transition-colors duration-75 hover:text-primary-200 dark:hover:text-primary-400"
+            className="transition-colors duration-75 hover:text-sky-200 active:text-sky-300"
           />
         </Button>
       ) : (

@@ -1,17 +1,16 @@
-"use server";
-
 import Link from "next/link";
-import { montserrat } from "public/fonts/fonts";
+import Image from "next/image";
+import { montserrat, playwriteIN } from "public/fonts/fonts";
 import clsx from "clsx";
 
-export const Logo = async ({ lang, size = "sm" }) => (
+export const Logo = ({ lang, size = "sm" }) => (
   <Link
     href={`/${lang}/`}
     className={clsx(
       montserrat.className,
-      { "text-md p-2": size === "sm" },
-      { "p-4 text-xl": size === "xl" },
-      "select-none bg-slate-100/10 transition-colors duration-75 hover:bg-slate-100/20 active:bg-slate-100/30 dark:border-slate-100",
+      { "text-md": size === "sm" },
+      { "text-xl": size === "xl" },
+      "hover:text-primary-200 active:text-primary-300 select-none transition-colors duration-100",
     )}
   >
     Mark Evers

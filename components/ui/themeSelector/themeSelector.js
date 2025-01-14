@@ -33,8 +33,9 @@ export const ThemeSelector = ({}) => {
       {theme ? (
         <Button onClick={toggleTheme}>
           <Icon
-            name={theme === "dark" ? "Moon" : "Sun"}
+            name={theme === "dark" ? "Sun" : "Moon"}
             size={iconSize}
+            weight="duotone"
             className="transition-colors duration-75 hover:text-sky-200 active:text-sky-300"
           />
         </Button>

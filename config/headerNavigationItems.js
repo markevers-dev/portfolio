@@ -6,23 +6,20 @@ export const headerNavigationItems = [
     href: "/portfolio",
     iconName: "Briefcase",
     id: uuid(),
+    isInactive: true,
   },
   {
     label: "About Me",
     href: "/about",
     iconName: "UserFocus",
     id: uuid(),
-  },
-  {
-    label: "Contact",
-    href: "/contact",
-    iconName: "AddressBook",
-    id: uuid(),
+    isInactive: true,
   },
   {
     label: "Resume",
     href: "/resume",
     iconName: "ReadCvLogo",
     id: uuid(),
+    isInactive: true,
   },
 ];

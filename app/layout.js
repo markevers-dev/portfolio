@@ -24,14 +24,13 @@ export const metadata = {
 const RootLayout = async ({ children }) => {
   const locale = await getLocaleFromHeaders();
   const theme = await getThemeFromCookies();
-  console.log(theme);
 
   return (
     <html lang={locale} className={clsx({ dark: theme === "dark" })}>
       <body
         className={clsx(
           inter.className,
-          "z-[1] flex h-full min-h-screen w-full flex-col bg-gradient-to-r from-black to-[#3533cd] text-slate-800 antialiased dark:text-slate-100",
+          "bg-primary-900 z-[1] flex h-full min-h-screen w-full flex-col text-slate-800 antialiased dark:text-slate-100",
         )}
       >
         {children}

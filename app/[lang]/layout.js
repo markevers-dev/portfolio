@@ -6,7 +6,7 @@ const Layout = async ({ children, params }) => {
   return (
     <>
       <Header lang={lang} />
-      <main className="flex-grow">{children}</main>
+      <main className="flex-grow px-8 md:px-24">{children}</main>
       <Footer lang={lang} />
     </>
   );

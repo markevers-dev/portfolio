@@ -27,5 +27,5 @@ export default {
     },
   },
   darkMode: "selector",
-  plugins: [],
+  plugins: [require("tailwindcss-motion")],
 };

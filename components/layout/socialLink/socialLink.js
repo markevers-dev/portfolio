@@ -34,7 +34,7 @@ export const SocialLink = ({
           name={iconName}
           size={24}
           weight="duotone"
-          className="dark:hover:text-primary-200 dark:active:text-primary-300 hover:text-primary-700 active:text-primary-600 transition-colors duration-200"
+          className="hover:text-primary-600 active:text-primary-500 dark:hover:text-primary-200 dark:active:text-primary-300 hover:motion-preset-seesaw-lg transition-colors duration-200"
         />
       </Link>
       <Transition

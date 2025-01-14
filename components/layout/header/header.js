@@ -42,7 +42,12 @@ export const Header = async ({ lang }) => (
     </nav>
     <div className="flex flex-row items-center gap-x-4">
       <ThemeSelector />
-      <Icon name="Translate" size={24} weight="duotone" />
+      <Icon
+        name="Translate"
+        size={24}
+        weight="duotone"
+        className="hover:motion-preset-seesaw-lg"
+      />
       <HeaderDropdown lang={lang} />
     </div>
   </header>

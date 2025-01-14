@@ -9,11 +9,6 @@ const Home = async ({ params }) => {
   return (
     <div className="flex max-w-2xl flex-col space-y-4">
       <div>
-        This will eventually be filled with content. Also: internationalization
-        has not been implemented yet, so I'm sorry for the translation icon
-        bamboozle!
-      </div>
-      <div>
         This website is being developed using{" "}
         <span
           className={clsx("font-bold tracking-wider", montserrat.className)}
@@ -41,13 +36,15 @@ const Home = async ({ params }) => {
         <Link
           href="https://github.com/markevers-dev/portfolio"
           target="_blank"
-          className={clsx(
-            "flex flex-row items-center space-x-2 font-bold tracking-wider",
-            montserrat.className,
-          )}
+          className={clsx("font-bold tracking-wider", montserrat.className)}
         >
-          GitHub <Icon name="GitBranch" size={20} />
+          GitHub
         </Link>
+        .
+      </div>
+      <div>
+        P.S.: Internationalization has not been implemented yet, so I'm sorry
+        for the bamboozle!
       </div>
     </div>
   );

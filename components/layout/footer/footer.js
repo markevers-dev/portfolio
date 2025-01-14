@@ -20,7 +20,7 @@ const Label = async ({ label }) => (
 export const Footer = async ({ lang }) => {
   return (
     <footer className="flex flex-col border-t-[1px] border-slate-100/10">
-      <div className="flex flex-col items-center justify-between px-8 py-2 md:flex-row md:px-24 md:py-4">
+      <div className="flex flex-col items-start justify-between px-8 py-2 md:flex-row md:items-center md:px-24">
         <div className="flex flex-col gap-y-2">
           <Label label="Sitemap" />
           <div>
@@ -38,7 +38,7 @@ export const Footer = async ({ lang }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-between border-t-[1px] border-slate-100/10 px-8 py-2 md:flex-row md:px-24 md:py-4">
+      <div className="flex flex-col-reverse items-start justify-between gap-y-4 border-t-[1px] border-slate-100/10 px-8 py-2 sm:flex-row sm:items-center md:px-24">
         <div className="flex flex-col gap-y-2">
           <Label label="Copyright" />
           <p className="text-sm">
@@ -61,7 +61,7 @@ export const Footer = async ({ lang }) => {
                   name={iconName}
                   size={24}
                   weight="duotone"
-                  className="transition-colors duration-200 hover:text-sky-200 active:text-sky-300"
+                  className="hover:text-primary-200 active:text-primary-300 transition-colors duration-200"
                 />
               </Link>
             ))}

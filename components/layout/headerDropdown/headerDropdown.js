@@ -16,7 +16,7 @@ export const HeaderDropdown = ({ lang }) => {
   console.log(lang);
   return (
     <Menu as="div" className="flex items-center md:hidden">
-      <MenuButton className="hover:text-primary-200 active:text-primary-300 transition-colors duration-100">
+      <MenuButton className="dark:hover:text-primary-200 dark:active:text-primary-300 hover:text-primary-700 active:text-primary-600 transition-colors duration-100">
         <Icon name="List" size={28} />
       </MenuButton>
       <MenuItems
@@ -33,7 +33,7 @@ export const HeaderDropdown = ({ lang }) => {
                 <Logo size="xl" lang={lang} />
                 <Button
                   onClick={close}
-                  className="hover:text-primary-200 active:text-primary-300 transition-colors duration-75"
+                  className="dark:hover:text-primary-200 dark:active:text-primary-300 hover:text-primary-700 active:text-primary-600 transition-colors duration-75"
                 >
                   <Icon name="X" size={28} weight="regular" />
                 </Button>

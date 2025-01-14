@@ -16,7 +16,10 @@ const HeaderItem = async ({ headerItemData, ...headerItemProps }) => {
       href={href}
       className={clsx(
         montserrat.className,
-        { "pointer-events-none text-slate-400 line-through": isInactive },
+        {
+          "pointer-events-none text-slate-500 line-through dark:text-slate-400":
+            isInactive,
+        },
         "flex flex-row items-center justify-center gap-x-2 text-sm tracking-widest transition-all duration-75 hover:font-bold",
       )}
       aria-disabled={isInactive}
@@ -30,7 +33,7 @@ const HeaderItem = async ({ headerItemData, ...headerItemProps }) => {
 };
 
 export const Header = async ({ lang }) => (
-  <header className="mb-4 flex w-full flex-row items-center justify-between border-b-[1px] border-slate-100/10 px-8 py-2 md:mb-6 md:flex-col md:px-24 md:py-4 md:max-lg:space-y-4 lg:flex-row">
+  <header className="mb-4 flex w-full flex-row items-center justify-between border-b-[1px] border-slate-900/10 px-8 py-2 md:mb-6 md:flex-col md:px-24 md:py-4 md:max-lg:space-y-4 lg:flex-row dark:border-slate-100/10">
     <Logo lang={lang} size="xl" />
     <nav className="flex flex-col space-x-12 max-md:hidden md:flex-row">
       {headerNavigationItems.map((headerItem) => (

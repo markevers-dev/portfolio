@@ -1,7 +1,6 @@
 import { montserrat } from "public/fonts/fonts";
 import clsx from "clsx";
 import Link from "next/link";
-import { Icon } from "components/core/icon/icon";
 
 const Home = async ({ params }) => {
   const { lang } = await params;
@@ -9,17 +8,29 @@ const Home = async ({ params }) => {
   return (
     <div className="flex max-w-2xl flex-col space-y-4">
       <div>
+        Hey there! My name is Mark Evers and I'm a Web Developer! I'm currently
+        studying Web Development at the HAN in Arnhem, The Netherlands and
+        working as an Intern Front-end/Back-end Development at Lukkien in Ede,
+        The Netherlands!
+      </div>
+      <div>
         This website is being developed using{" "}
         <span
           className={clsx("font-bold tracking-wider", montserrat.className)}
         >
           Next.js
+        </span>
+        ,{" "}
+        <span
+          className={clsx("font-bold tracking-wider", montserrat.className)}
+        >
+          Tailwind CSS
         </span>{" "}
         &{" "}
         <span
           className={clsx("font-bold tracking-wider", montserrat.className)}
         >
-          Tailwind CSS
+          Headless UI
         </span>{" "}
         and being hosted on{" "}
         <span
@@ -36,7 +47,10 @@ const Home = async ({ params }) => {
         <Link
           href="https://github.com/markevers-dev/portfolio"
           target="_blank"
-          className={clsx("font-bold tracking-wider", montserrat.className)}
+          className={clsx(
+            "hover:text-primary-200 active:text-primary-300 font-bold tracking-wider transition-colors duration-100",
+            montserrat.className,
+          )}
         >
           GitHub
         </Link>

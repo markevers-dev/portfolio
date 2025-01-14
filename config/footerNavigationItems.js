@@ -8,7 +8,7 @@ export const socialMediaLinks = [
     id: uuid(),
   },
   {
-    label: "Github",
+    label: "GitHub",
     href: "https://github.com/markevers-dev",
     iconName: "GithubLogo",
     id: uuid(),
@@ -17,6 +17,12 @@ export const socialMediaLinks = [
     label: "X",
     href: "https://x.com/dev_mark_e",
     iconName: "XLogo",
+    id: uuid(),
+  },
+  {
+    label: "Bluesky",
+    href: "https://bsky.app/profile/markevers-dev.bsky.social",
+    iconName: "Butterfly",
     id: uuid(),
   },
   {

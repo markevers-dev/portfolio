@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import { montserrat, playwriteIN } from "public/fonts/fonts";
+import { montserrat } from "public/fonts/fonts";
 import clsx from "clsx";
 
 export const Logo = ({ lang, size = "sm" }) => (
@@ -10,7 +9,7 @@ export const Logo = ({ lang, size = "sm" }) => (
       montserrat.className,
       { "text-md": size === "sm" },
       { "text-xl": size === "xl" },
-      "hover:text-primary-200 active:text-primary-300 select-none transition-colors duration-100",
+      "hover:text-primary-200 active:text-primary-300 flex select-none flex-row items-center space-x-2 transition-colors duration-100",
     )}
   >
     Mark Evers

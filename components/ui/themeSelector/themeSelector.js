@@ -5,6 +5,7 @@ import { Icon, Spinner } from "components";
 import { Button, Transition } from "@headlessui/react";
 import clsx from "clsx";
 import { montserrat } from "public/fonts/fonts";
+import { isMobile, BrowserView } from "react-device-detect";
 
 const iconSize = 24;
 
@@ -31,12 +32,16 @@ export const ThemeSelector = ({}) => {
     });
   };
 
+  const handleMouseEnter = () => {
+    if (!isMobile) setIsHovered(true);
+  };
+
   return (
     <>
       {theme ? (
         <div
           className="relative flex items-center"
-          onMouseEnter={() => setIsHovered(true)}
+          onMouseEnter={handleMouseEnter}
           onMouseLeave={() => setIsHovered(false)}
         >
           <Button onClick={toggleTheme}>
@@ -47,24 +52,26 @@ export const ThemeSelector = ({}) => {
               className="hover:text-primary-600 active:text-primary-500 dark:hover:text-primary-200 dark:active:text-primary-300 hover:motion-preset-seesaw-lg transition-colors duration-75"
             />
           </Button>
-          <Transition
-            show={isHovered}
-            enter="transition-opacity duration-150"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-opacity duration-150"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <span
-              className={clsx(
-                "bg-primary-500 absolute bottom-[-2rem] left-1/2 -translate-x-1/2 text-nowrap rounded px-2 py-1 text-xs font-bold text-slate-100 shadow-lg",
-                montserrat.className,
-              )}
+          <BrowserView>
+            <Transition
+              show={isHovered}
+              enter="transition-opacity duration-150"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition-opacity duration-150"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
             >
-              Switch theme
-            </span>
-          </Transition>
+              <span
+                className={clsx(
+                  "bg-primary-500 absolute bottom-[-2rem] left-1/2 -translate-x-1/2 text-nowrap rounded px-2 py-1 text-xs font-bold text-slate-100 shadow-lg",
+                  montserrat.className,
+                )}
+              >
+                Switch theme
+              </span>
+            </Transition>
+          </BrowserView>
         </div>
       ) : (
         <Spinner size={iconSize} color="light" />

@@ -3,7 +3,7 @@ import { v4 as uuid } from "uuid";
 export const socialMediaLinks = [
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/mark-evers-78069a19a/",
+    href: "https://www.linkedin.com/in/mark-evers-dev/",
     iconName: "LinkedinLogo",
     id: uuid(),
   },

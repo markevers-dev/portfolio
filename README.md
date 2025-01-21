@@ -1,3 +1,3 @@
-<img src="public/assets/GitHub Repo Social Preview.png" alt="GitHub Repo Social Preview" width="960" height="480">
+![GitHub Social Preview](/public/assets/github-social-preview.png)
 
 # README to be made

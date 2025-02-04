@@ -14,12 +14,6 @@ export const socialMediaLinks = [
     id: uuid(),
   },
   {
-    label: "X",
-    href: "https://x.com/dev_mark_e",
-    iconName: "XLogo",
-    id: uuid(),
-  },
-  {
     label: "Bluesky",
     href: "https://bsky.app/profile/markevers-dev.bsky.social",
     iconName: "Butterfly",

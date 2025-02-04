@@ -9,9 +9,15 @@ const Home = async ({ params }) => {
     <div className="flex max-w-2xl flex-col space-y-4">
       <div>
         Hey there! My name is Mark Evers and I'm a Web Developer! I'm currently
-        studying Web Development at the HAN in Arnhem, The Netherlands and
-        working as an Intern Front-end/Back-end Development at Lukkien in Ede,
-        The Netherlands!
+        studying Web Development at the HAN in Arnhem, The Netherlands! I used
+        to work as a Junior Programmer at Evers Automatisering b.v. and as an
+        Intern Front-end/Back-end Development at Lukkien!
+      </div>
+      <div>
+        At the moment, I'm following a course in .NET and AI. Afterwards, I will
+        be following a Minor in DevOps. Finally, in september of 2026, I will
+        start my final internship! If you're interested in hiring me as an
+        intern at that time, feel free to contact me!
       </div>
       <div>
         This website is being developed using{" "}
@@ -48,7 +54,7 @@ const Home = async ({ params }) => {
           href="https://github.com/markevers-dev/portfolio"
           target="_blank"
           className={clsx(
-            "hover:text-primary-200 active:text-primary-300 font-bold tracking-wider transition-colors duration-100",
+            "font-bold tracking-wider underline transition-colors duration-200 hover:text-primary-600 active:text-primary-500 dark:hover:text-primary-200 dark:active:text-primary-300",
             montserrat.className,
           )}
         >

@@ -5,6 +5,7 @@ import { getLocaleFromHeaders } from "utils/getLocaleFromHeader";
 import { getThemeFromCookies } from "utils/getThemeFromCookie";
 import { inter } from "public/fonts/fonts";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: {
@@ -36,6 +37,7 @@ const RootLayout = async ({ children }) => {
       >
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

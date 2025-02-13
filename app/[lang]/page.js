@@ -15,7 +15,7 @@ const Home = async ({ params }) => {
       </div>
       <div>
         At the moment, I'm following a course in .NET and AI. Afterwards, I will
-        be following a Minor in DevOps. Finally, in september of 2026, I will
+        be following a Minor in DevOps. Finally, in february of 2026, I will
         start my graduation internship! If you're interested in hiring me as an
         intern at that time, feel free to contact me!
       </div>

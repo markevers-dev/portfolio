@@ -4,6 +4,7 @@ import clsx from "clsx";
 import { getLocaleFromHeaders } from "utils/getLocaleFromHeader";
 import { getThemeFromCookies } from "utils/getThemeFromCookie";
 import { inter } from "public/fonts/fonts";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: {
@@ -30,10 +31,11 @@ const RootLayout = async ({ children }) => {
       <body
         className={clsx(
           inter.className,
-          "bg-primary-100 dark:bg-primary-900 z-[1] flex h-full min-h-screen w-full flex-col text-slate-700 antialiased transition-colors duration-100 dark:text-slate-100",
+          "z-[1] flex h-full min-h-screen w-full flex-col bg-primary-100 text-slate-700 antialiased transition-colors duration-100 dark:bg-primary-900 dark:text-slate-100",
         )}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

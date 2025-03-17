@@ -28,7 +28,7 @@ export const Footer = async ({ lang }) => (
               key={id}
               href={`/${lang}/${href}`}
               className={clsx(
-                "hover:text-primary-200 active:text-primary-300 text-sm transition-colors duration-75",
+                "text-sm transition-colors duration-75 hover:text-primary-600 active:text-primary-400 dark:hover:text-primary-200 dark:active:text-primary-300",
               )}
             >
               {label}

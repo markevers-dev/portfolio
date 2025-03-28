@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Button } from "@headlessui/react";
 import { Icon } from "components";
 import { pdfjs, Document, Page } from "react-pdf";
@@ -23,6 +24,18 @@ const handleDownload = () => {
 };
 
 const Resume = () => {
+  const [pdfWidth, setPdfWidth] = useState(800);
+
+  useEffect(() => {
+    const updateWidth = () => {
+      setPdfWidth(Math.min(window.innerWidth - 32, 800));
+    };
+
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+
   return (
     <div className="mb-4 flex flex-col items-center gap-y-2 p-4 md:mb-6">
       <Button
@@ -37,12 +50,12 @@ const Resume = () => {
         />
         Download Resume
       </Button>
-      <div className="border border-gray-300 dark:border-gray-800">
+      <div className="flex w-full justify-center">
         <Document
           file="/assets/cv-mark_evers-en.pdf"
-          className="flex justify-center"
+          className="border border-gray-300 dark:border-gray-800"
         >
-          <Page pageNumber={1} width={maxWidth} />
+          <Page pageNumber={1} width={pdfWidth} />
         </Document>
       </div>
     </div>

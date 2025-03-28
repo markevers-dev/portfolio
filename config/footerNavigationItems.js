@@ -45,4 +45,9 @@ export const sitemap = [
     href: "",
     id: uuid(),
   },
+  {
+    label: "Resume",
+    href: "/resume",
+    id: uuid(),
+  },
 ];

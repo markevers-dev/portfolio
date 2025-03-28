@@ -1,7 +1,7 @@
 "use server";
 
 import Link from "next/link";
-import { Icon, SocialLink } from "components";
+import { SocialLink } from "components";
 import { socialMediaLinks, sitemap } from "config/footerNavigationItems";
 import { montserrat } from "public/fonts/fonts";
 import clsx from "clsx";
@@ -22,7 +22,7 @@ export const Footer = async ({ lang }) => (
     <div className="flex flex-col items-start justify-between px-8 py-2 md:flex-row md:items-center md:px-24">
       <div className="flex flex-col gap-y-2">
         <Label label="Sitemap" />
-        <div>
+        <div className="flex flex-col gap-y-1">
           {sitemap.map(({ label, href, id }) => (
             <Link
               key={id}

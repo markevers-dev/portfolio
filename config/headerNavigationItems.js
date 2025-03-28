@@ -13,7 +13,7 @@ export const headerNavigationItems = [
     href: "/resume",
     iconName: "ReadCvLogo",
     id: uuid(),
-    isInactive: true,
+    isInactive: false,
   },
   {
     label: "Portfolio",

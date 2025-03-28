@@ -20,13 +20,18 @@ const HeaderItem = async ({ headerItemData, ...headerItemProps }) => {
           "pointer-events-none text-slate-500 line-through dark:text-slate-400":
             isInactive,
         },
-        "flex flex-row items-center justify-center gap-x-2 text-sm tracking-widest transition-all duration-75 hover:font-bold",
+        "group flex flex-row items-center justify-center gap-x-2 text-sm tracking-widest transition-all duration-75 hover:text-primary-600 active:text-primary-400 dark:hover:text-primary-200 dark:active:text-primary-300",
       )}
       aria-disabled={isInactive}
       tabIndex={isInactive ? -1 : undefined}
       {...headerItemProps}
     >
-      <Icon name={iconName} size={16} weight="duotone" />
+      <Icon
+        name={iconName}
+        size={16}
+        weight="duotone"
+        className="group-hover:motion-preset-seesaw-lg"
+      />
       {label}
     </Link>
   );

@@ -35,7 +35,7 @@ const Resume = () => {
           weight="duotone"
           className="group-hover:motion-preset-seesaw-lg"
         />
-        Download CV
+        Download Resume
       </Button>
       <div className="border border-gray-300 dark:border-gray-800">
         <Document

@@ -9,8 +9,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: {
-    default: "Portfolio",
-    template: "%s | Portfolio",
+    default: "Portfolio - Mark Evers",
+    template: "%s | Portfolio - Mark Evers",
   },
   description: "Portfolio of Mark Evers' work",
   generator: "Next.js",

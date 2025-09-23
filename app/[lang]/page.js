@@ -1,35 +1,25 @@
-import { montserrat } from "public/fonts/fonts";
-import clsx from "clsx";
-import Link from "next/link";
+import { translations } from "config/translations";
+import Image from "next/image";
 
 const Home = async ({ params }) => {
   const { lang } = await params;
+  const homeText = translations.home_page;
 
   return (
-    <div className="flex max-w-2xl flex-col space-y-4">
-      <div>
-        Hey there! My name is Mark Evers and I'm a Web Developer! I'm currently
-        in my 4th (and last) year of studying HBO-ICT, specialized in Web
-        Development, at the HAN in Arnhem, The Netherlands!
+    <div className="mb-4 flex flex-col items-center justify-center max-lg:space-y-12 md:mb-6 lg:mb-12 lg:flex-row lg:space-x-48">
+      <div className="flex max-w-2xl flex-col space-y-4">
+        <h1 className="text-3xl font-bold text-primary-700 dark:text-primary-200">
+          {homeText.title[lang]}
+        </h1>
+        <div className="text-xl">{homeText.description[lang]}</div>
       </div>
-      <div>
-        If you want to see the code for this website, you can find it on{" "}
-        <Link
-          href="https://github.com/markevers-dev/portfolio"
-          target="_blank"
-          className={clsx(
-            "font-bold tracking-wider underline transition-colors duration-200 hover:text-primary-600 active:text-primary-500 dark:hover:text-primary-200 dark:active:text-primary-300",
-            montserrat.className,
-          )}
-        >
-          GitHub
-        </Link>
-        .
-      </div>
-      <div>
-        P.S.: Internationalization has not been implemented yet, so I'm sorry
-        for the bamboozle!
-      </div>
+      <Image
+        src="/assets/hello_its_me.avif"
+        width="1203"
+        height="1129"
+        alt={homeText.image_alt[lang]}
+        className="max-w-96 rounded-md shadow-sm"
+      />
     </div>
   );
 };

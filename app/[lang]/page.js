@@ -9,44 +9,8 @@ const Home = async ({ params }) => {
     <div className="flex max-w-2xl flex-col space-y-4">
       <div>
         Hey there! My name is Mark Evers and I'm a Web Developer! I'm currently
-        studying Web Development at the HAN in Arnhem, The Netherlands! I used
-        to work as a Junior Programmer at Evers Automatisering b.v. and as an
-        Intern Front-end/Back-end Development at Lukkien!
-      </div>
-      <div>
-        At the moment, I'm following a course in .NET and AI. Afterwards, I will
-        be following a Minor in DevOps. Finally, in february of 2026, I will
-        start my graduation internship! If you're interested in hiring me as an
-        intern at that time, feel free to contact me!
-      </div>
-      <div>
-        This website is being developed using{" "}
-        <span
-          className={clsx("font-bold tracking-wider", montserrat.className)}
-        >
-          Next.js
-        </span>
-        ,{" "}
-        <span
-          className={clsx("font-bold tracking-wider", montserrat.className)}
-        >
-          Tailwind CSS
-        </span>{" "}
-        &{" "}
-        <span
-          className={clsx("font-bold tracking-wider", montserrat.className)}
-        >
-          Headless UI
-        </span>{" "}
-        and being hosted on{" "}
-        <span
-          className={clsx("font-bold tracking-wider", montserrat.className)}
-        >
-          Vercel
-        </span>
-        ! These tools happen to be what I'm currently specialized in, so if
-        you're interested in contacting me, take a look at the socials at the
-        bottom of the page!
+        in my 4th (and last) year of studying HBO-ICT, specialized in Web
+        Development, at the HAN in Arnhem, The Netherlands!
       </div>
       <div>
         If you want to see the code for this website, you can find it on{" "}

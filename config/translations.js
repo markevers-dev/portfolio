@@ -19,6 +19,18 @@ export const translations = {
       nl: "Download CV",
     },
   },
+  portfolioPage: {
+    card: {
+      includes_github_link: {
+        en: "Includes GitHub Link",
+        nl: "Bevat GitHub Link",
+      },
+      technologies_used: {
+        en: "Technologies Used",
+        nl: "Gebruikte Technologieën",
+      },
+    },
+  },
   header: {
     nav: {
       about_me: {

@@ -6,7 +6,7 @@ const Home = async ({ params }) => {
   const homeText = translations.home_page;
 
   return (
-    <div className="mb-4 flex flex-col items-center justify-center max-lg:space-y-12 md:mb-6 lg:mb-12 lg:flex-row lg:space-x-48">
+    <div className="mb-4 flex flex-col items-center justify-center max-lg:space-y-6 md:mb-6 lg:mb-12 lg:flex-row lg:space-x-48">
       <div className="flex max-w-2xl flex-col space-y-4">
         <h1 className="text-3xl font-bold text-primary-700 dark:text-primary-200">
           {homeText.title[lang]}
@@ -18,7 +18,7 @@ const Home = async ({ params }) => {
         width="1203"
         height="1129"
         alt={homeText.image_alt[lang]}
-        className="max-w-96 rounded-md shadow-sm"
+        className="mx-12 w-full max-w-96 rounded-md shadow-sm"
       />
     </div>
   );

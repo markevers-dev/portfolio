@@ -52,7 +52,7 @@ export const HeaderDropdown = ({ lang }) => (
                   "pointer-events-none text-slate-500 line-through dark:text-slate-400":
                     isInactive,
                 },
-                "flex flex-row items-center justify-center space-x-2 rounded-xl p-2 transition-colors duration-200 hover:bg-slate-700/10 hover:shadow-sm active:bg-slate-700/20",
+                "flex flex-row items-center justify-center gap-x-2 rounded-xl p-2 transition-colors duration-200 hover:bg-slate-700/10 hover:shadow-sm active:bg-slate-700/20",
               )}
               aria-disabled={isInactive}
               tabIndex={isInactive ? -1 : undefined}

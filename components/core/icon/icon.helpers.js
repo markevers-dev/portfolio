@@ -1,5 +1,7 @@
 import {
   AddressBook,
+  ArrowSquareRight,
+  ArrowSquareOut,
   BookOpen,
   Briefcase,
   Butterfly,
@@ -23,6 +25,8 @@ import {
 
 export const icons = {
   AddressBook: <AddressBook />,
+  ArrowSquareRight: <ArrowSquareRight />,
+  ArrowSquareOut: <ArrowSquareOut />,
   BookOpen: <BookOpen />,
   Briefcase: <Briefcase />,
   Butterfly: <Butterfly />,

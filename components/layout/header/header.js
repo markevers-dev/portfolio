@@ -13,13 +13,13 @@ import clsx from "clsx";
 
 import { headerNavigationItems } from "config/headerNavigationItems";
 
-const HeaderItem = async ({ headerItemData, ...headerItemProps }) => {
+const HeaderItem = async ({ headerItemData, lang, ...headerItemProps }) => {
   const { label, href, iconName } = headerItemData;
   const isInactive = headerItemData.isInactive ? true : false;
 
   return (
     <Link
-      href={href}
+      href={`/${lang}/${href}`}
       className={clsx(
         montserrat.className,
         {
@@ -48,7 +48,11 @@ export const Header = async ({ lang }) => (
     <Logo lang={lang} size="xl" />
     <nav className="flex flex-col space-x-12 max-lg:hidden md:flex-row">
       {headerNavigationItems.map((headerItem) => (
-        <HeaderItem headerItemData={headerItem} key={headerItem.id} />
+        <HeaderItem
+          headerItemData={headerItem}
+          lang={lang}
+          key={headerItem.id}
+        />
       ))}
     </nav>
     <div className="flex flex-row items-center gap-x-4">

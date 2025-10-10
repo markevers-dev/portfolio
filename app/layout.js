@@ -6,11 +6,12 @@ import { getThemeFromCookies } from "utils/getThemeFromCookie";
 import { inter } from "public/fonts/fonts";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { icons } from "config/metadata";
 
 export const metadata = {
   title: {
-    default: "Portfolio - Mark Evers",
-    template: "%s | Portfolio - Mark Evers",
+    default: "Mark Evers",
+    template: "%s | Mark Evers",
   },
   description: "Portfolio of Mark Evers' work",
   generator: "Next.js",
@@ -21,6 +22,7 @@ export const metadata = {
     address: false,
     telephone: false,
   },
+  icons,
 };
 
 const RootLayout = async ({ children }) => {

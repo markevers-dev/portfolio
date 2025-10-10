@@ -2,11 +2,11 @@ import { v4 as uuid } from "uuid";
 
 export const headerNavigationItems = [
   {
-    label: "About Me",
-    href: "/about",
-    iconName: "UserFocus",
+    label: "Portfolio",
+    href: "/portfolio",
+    iconName: "Briefcase",
     id: uuid(),
-    isInactive: true,
+    isInactive: false,
   },
   {
     label: "Resume",
@@ -14,12 +14,5 @@ export const headerNavigationItems = [
     iconName: "ReadCvLogo",
     id: uuid(),
     isInactive: false,
-  },
-  {
-    label: "Portfolio",
-    href: "/portfolio",
-    iconName: "Briefcase",
-    id: uuid(),
-    isInactive: true,
   },
 ];

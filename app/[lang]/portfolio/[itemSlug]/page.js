@@ -2,11 +2,15 @@ import Link from "next/link";
 import { portfolioItems } from "config/portfolioItems";
 import { notFound } from "next/navigation";
 import { Icon } from "components";
+import { supportedLanguages } from "config/languages";
 
 export const generateStaticParams = async () => {
-  return portfolioItems.map((item) => ({
-    itemSlug: item.slug,
-  }));
+  return portfolioItems.flatMap((item) =>
+    supportedLanguages.map((lang) => ({
+      lang,
+      itemSlug: item.slug,
+    })),
+  );
 };
 
 export const generateMetadata = async ({ params }) => {

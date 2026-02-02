@@ -5,8 +5,8 @@ export const translations = {
       nl: "Welkom op mijn Portfolio!",
     },
     description: {
-      en: "My name is Mark Evers, I'm 24 years old and I'm a Web Developer! I'm currently in my 4th (and last) year of studying HBO-ICT, specialized in Web Development, at the HAN in Arnhem, The Netherlands.",
-      nl: "Mijn naam is Mark Evers, ik ben 24 jaar oud en ik ben een Web Developer! Ik zit momenteel in mijn 4e (en laatste) jaar van de studie HBO-ICT, gespecialiseerd in Web Development, aan de HAN in Arnhem, Nederland.",
+      en: "My name is Mark Evers, I'm 24 years old and I'm a Web Developer! I'm currently in my 4th (and last) year of studying HBO-ICT, specialized in Web Development, at the HAN in Arnhem, The Netherlands. I'm also a graduation intern at Four Digits in Arnhem, The Netherlands, as of February of 2026.",
+      nl: "Mijn naam is Mark Evers, ik ben 24 jaar oud en ik ben een Web Developer! Ik zit momenteel in mijn 4e (en laatste) jaar van de studie HBO-ICT, gespecialiseerd in Web Development, aan de HAN in Arnhem, Nederland. Ik ben ook een afstudeerstagiair bij Four Digits in Arnhem, Nederland, sinds februari 2026.",
     },
     image_alt: {
       en: "A picture of me, Mark Evers",
